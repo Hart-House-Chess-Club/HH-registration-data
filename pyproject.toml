@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "hh-registration-data"
+name = "hh_registration_data"
 description = 'Takes HH registration data from Hart House registration webpage and displays number of registrations. '
 readme = "README.md"
 requires-python = ">=3.7"
@@ -27,12 +27,12 @@ dependencies = []
 dynamic = ["version"]
 
 [project.urls]
-Documentation = "https://github.com/unknown/hh-registration-data#readme"
-Issues = "https://github.com/unknown/hh-registration-data/issues"
-Homepage = "https://github.com/unknown/hh-registration-data"
+Documentation = "https://github.com/Hart-House-Chess-Club/hh-registration-data#readme"
+Issues = "https://github.com/Hart-House-Chess-Club/hh-registration-data/issues"
+Homepage = "https://github.com/Hart-House-Chess-Club/hh-registration-data"
 
 [tool.hatch.version]
-path = "hh_registration_data/__about__.py"
+path = "src/hh_registration_data/__about__.py"
 
 [tool.hatch.envs.default]
 dependencies = [
@@ -50,7 +50,7 @@ python = ["37", "38", "39", "310", "311"]
 branch = true
 parallel = true
 omit = [
-  "hh_registration_data/__about__.py",
+  "src/hh_registration_data/__about__.py",
 ]
 
 [tool.coverage.report]
